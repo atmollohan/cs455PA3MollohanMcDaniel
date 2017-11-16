@@ -52,7 +52,10 @@ void rtupdate(Packet rcvdpkt) {
         for (int i =0; i < mincost.length; i++) {
           // if you find a better distance and you are not referencing yourself then make a change to the costs
           if( (this.nodename != i) && (delaytofromNode + mincost[i] < this.costs[i][fromNode]) ){
-            System.out.println("Total Delay from "+this.nodename+" to "+i+" is "+(delaytofromNode + mincost[i])+" via "+fromNode);
+            System.out.println("Delay from "+this.nodename+" to "+fromNode+ " is "+delaytofromNode+
+                                " and from "+fromNode+" to "+i+" is "+(mincost[i])+
+                                " totaling "+(delaytofromNode + mincost[i])+
+                                " which is less than the previous delay of "+this.costs[i][fromNode]);
             this.costs[i][fromNode] = (delaytofromNode + mincost[i]);
           }
         }
@@ -133,7 +136,7 @@ void initializeCosts(){
       this.costs[i][j] = INFINITY;
     }
   }
-  this.costs[this.nodename][this.nodename] = 0;
+  //this.costs[this.nodename][this.nodename] = 0;
   //printCosts();
 }
 
@@ -165,14 +168,14 @@ boolean needToUpdateLK(){
   boolean altered = false;
 
   for (int i=0; i < this.lkcost.length; i++) {
-    //System.out.println("Current delay from "+this.nodename+" to "+i+" is "+this.lkcost[i]);
     for (int j=0; j < this.costs[0].length ;j++ ) {
-      //System.out.println("Table has delay from "+this.nodename+" to "+i+" as "+this.costs[i][j]+" via "+j);
       if(this.costs[i][j] < this.lkcost[i]){
+        System.out.println("INCONSISTENCY FOUND");
         System.out.println("Current delay from "+this.nodename+" to "+i+" is "+this.lkcost[i]);
         System.out.println("Table has delay from "+this.nodename+" to "+i+" as "+this.costs[i][j]+" via "+j);
-        //this.lkcost[i] = this.costs[i][j];
-        //altered = true;
+        System.out.println("\n");
+        this.lkcost[i] = this.costs[i][j];
+        altered = true;
       }
     }
   }
