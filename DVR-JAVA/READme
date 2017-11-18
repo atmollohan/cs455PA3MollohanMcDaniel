@@ -25,3 +25,45 @@ make all
 To run
 --------------------
 java Project3
+
+or
+
+java Project3 > DVRtraceout.txt
+(if you want to have the output in a file)
+
+
+--------------------
+Design
+--------------------
+See comments in node.java for questions on design and implementation
+rinit() called in for every node after node is given name and lkcost
+rinit initilizes relevant data structures and tables then figures out which nodes are neighbors and sends these neigbors distance vectors
+rupdate will look at the costs table and the recieved min costs and evaluate if changes can be made to to said costs table based on distance vectors
+if changes can be made they are and the min costs and and costs table are updated then this node will tell its neighbors something has changed
+When sending distance vectors to a specific neighbor it checks to make sure that sending specific values does not result in loops via the send to fridns methods
+The split horizon is implemented in this helper method and makes it so that the best distance form this node to destination via j contains no loops
+In doing this the distance tables for nodes 0-3 are all perfectly matching the correct tables
+Link handler basically updates the nodes link costs between neighbors resets the min costs and then also resets the costs table and resend vectors
+In doing so even non altered nodes will recieve an update and change their costs tables accordingly
+
+To see the result of running our DVR with trace 2 and random seed of some number look at DVRtraceout.txt
+Relevant lines
+Line 0-5 graph is being initialized
+Resulting D0 table at line 831
+Resulting D1 table at line 840
+Resulting D2 table at line 804
+Resulting D3 table at line 849
+
+Link change at line 856   link from 0-1 changed from 1 to 20
+
+Resulting D0 table at line 1437
+Resulting D1 table at line 1446
+Resulting D2 table at line 1391
+Resulting D3 table at line 1419
+
+Link change at line 1453  link from 0-1 changed from 20 to 1
+
+Resulting D0 table at line 1996
+Resulting D1 table at line 2005
+Resulting D2 table at line 1941
+Resulting D3 table at line 1969

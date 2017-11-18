@@ -1,0 +1,2014 @@
+Network Simulator v1.0
+Enter trace level (>= 0): [0] Enter seed (>= 0): [3322] Initializing node 0
+Initializing node 1
+Initializing node 2
+Initializing node 3
+MAIN: rcv event, t=0.055, at 1 src: 0, dest: 1, contents:   0   1   1 9999
+Delay from 1 to 0 is 1 and from 0 to 0 is 0 totaling 1 and the previous delay of 9999
+Delay from 1 to 0 is 1 and from 0 to 2 is 1 totaling 2 and the previous delay of 9999
+Delay from 1 to 0 is 1 and from 0 to 3 is 9999 totaling 10000 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|    2   9999   9999
+     3|  10000   9999   9999
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 2 is 10
+Table has delay from 1 to 2 as 2 via 0
+
+MAIN: rcv event, t=0.625, at 0 src: 1, dest: 0, contents:   1   0  10   7
+Delay from 0 to 1 is 1 and from 1 to 1 is 0 totaling 1 and the previous delay of 9999
+Delay from 0 to 1 is 1 and from 1 to 2 is 10 totaling 11 and the previous delay of 9999
+Delay from 0 to 1 is 1 and from 1 to 3 is 7 totaling 8 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1   9999 
+dest 2|   11   9999 
+     3|    8   9999 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 9999
+Table has delay from 0 to 3 as 8 via 1
+
+MAIN: rcv event, t=1.393, at 2 src: 0, dest: 2, contents:   0   1   1 9999
+Delay from 2 to 0 is 1 and from 0 to 0 is 0 totaling 1 and the previous delay of 9999
+Delay from 2 to 0 is 1 and from 0 to 1 is 1 totaling 2 and the previous delay of 9999
+Delay from 2 to 0 is 1 and from 0 to 3 is 9999 totaling 10000 and the previous delay of 9999
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2   9999   9999
+     3|  10000   9999   9999
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 2 to 1 is 10
+Table has delay from 2 to 1 as 2 via 0
+
+MAIN: rcv event, t=1.577, at 3 src: 1, dest: 3, contents:   1   0  10   7
+Delay from 3 to 1 is 7 and from 1 to 0 is 1 totaling 8 and the previous delay of 9999
+Delay from 3 to 1 is 7 and from 1 to 1 is 0 totaling 7 and the previous delay of 9999
+Delay from 3 to 1 is 7 and from 1 to 2 is 10 totaling 17 and the previous delay of 9999
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8   9999
+dest 1|    7   9999
+     2|   17   9999
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 3 to 0 is 9999
+Table has delay from 3 to 0 as 8 via 1
+
+MAIN: rcv event, t=1.885, at 1 src: 2, dest: 1, contents:   1  10   0   2
+Delay from 1 to 2 is 10 and from 2 to 0 is 1 totaling 11 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 2 is 0 totaling 10 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 3 is 2 totaling 12 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|  10000    12   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=2.181, at 2 src: 1, dest: 2, contents:   1   0  10   7
+Delay from 2 to 1 is 10 and from 1 to 0 is 1 totaling 11 and the previous delay of 9999
+Delay from 2 to 1 is 10 and from 1 to 1 is 0 totaling 10 and the previous delay of 9999
+Delay from 2 to 1 is 10 and from 1 to 3 is 7 totaling 17 and the previous delay of 9999
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  10000    17   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=2.279, at 0 src: 2, dest: 0, contents:   1  10   0   2
+Delay from 0 to 2 is 1 and from 2 to 1 is 10 totaling 11 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 2 is 0 totaling 1 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 3 is 2 totaling 3 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    11 
+dest 2|   11     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 8
+Table has delay from 0 to 3 as 3 via 2
+
+MAIN: rcv event, t=3.124, at 1 src: 3, dest: 1, contents: 9999   7   2   0
+Delay from 1 to 3 is 7 and from 3 to 0 is 9999 totaling 10006 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 2 is 2 totaling 9 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 3 is 0 totaling 7 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10     9
+     3|  10000    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=3.278, at 3 src: 2, dest: 3, contents:   1  10   0   2
+Delay from 3 to 2 is 2 and from 2 to 0 is 1 totaling 3 and the previous delay of 9999
+Delay from 3 to 2 is 2 and from 2 to 1 is 10 totaling 12 and the previous delay of 9999
+Delay from 3 to 2 is 2 and from 2 to 2 is 0 totaling 2 and the previous delay of 9999
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 3 to 0 is 8
+Table has delay from 3 to 0 as 3 via 2
+
+MAIN: rcv event, t=3.866, at 0 src: 1, dest: 0, contents:   1   0   2   7
+Delay from 0 to 1 is 1 and from 1 to 2 is 2 totaling 3 and the previous delay of 11
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    11 
+dest 2|    3     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=4.001, at 1 src: 0, dest: 1, contents:   0   1   1   8
+Delay from 1 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 10000
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10     9
+     3|    9    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=4.041, at 3 src: 1, dest: 3, contents:   1   0   2   7
+Delay from 3 to 1 is 7 and from 1 to 2 is 2 totaling 9 and the previous delay of 17
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|    9     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=4.167, at 2 src: 3, dest: 2, contents: 9999   7   2   0
+Delay from 2 to 3 is 2 and from 3 to 0 is 9999 totaling 10001 and the previous delay of 9999
+Delay from 2 to 3 is 2 and from 3 to 1 is 7 totaling 9 and the previous delay of 9999
+Delay from 2 to 3 is 2 and from 3 to 3 is 0 totaling 2 and the previous delay of 9999
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|  10000    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=4.428, at 0 src: 2, dest: 0, contents:   1   2   0   2
+Delay from 0 to 2 is 1 and from 2 to 1 is 2 totaling 3 and the previous delay of 11
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     3 
+dest 2|    3     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=4.469, at 0 src: 1, dest: 0, contents:   1   0  10  12
+Delay from 0 to 1 is 1 and from 1 to 2 is 10 totaling 11 and the previous delay of 3
+Delay from 0 to 1 is 1 and from 1 to 3 is 12 totaling 13 and the previous delay of 8
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1     3 
+dest 2|   11     1 
+     3|   13     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=5.026, at 3 src: 2, dest: 3, contents:   1   2   0   2
+Delay from 3 to 2 is 2 and from 2 to 1 is 2 totaling 4 and the previous delay of 12
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 3 to 1 is 7
+Table has delay from 3 to 1 as 4 via 2
+
+MAIN: rcv event, t=5.088, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10     9
+     3|    9    12     7
+
+
+MAIN: rcv event, t=5.228, at 1 src: 3, dest: 1, contents:   8   7   2   0
+Delay from 1 to 3 is 7 and from 3 to 0 is 8 totaling 15 and the previous delay of 10006
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    15
+dest 2|    2    10     9
+     3|    9    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=6.074, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|  10000    17     2
+
+
+MAIN: rcv event, t=6.120, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=6.295, at 0 src: 2, dest: 0, contents:   1  10   0  17
+Delay from 0 to 2 is 1 and from 2 to 1 is 10 totaling 11 and the previous delay of 3
+Delay from 0 to 2 is 1 and from 2 to 3 is 17 totaling 18 and the previous delay of 3
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    11 
+dest 2|   11     1 
+     3|   13    18 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=6.657, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    15
+dest 2|    2    10     9
+     3|    9    12     7
+
+
+MAIN: rcv event, t=6.721, at 2 src: 0, dest: 2, contents:   0   1   1   8
+Delay from 2 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 10000
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=6.764, at 2 src: 3, dest: 2, contents:   8   7   2   0
+Delay from 2 to 3 is 2 and from 3 to 0 is 8 totaling 10 and the previous delay of 10001
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=6.871, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=7.059, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=7.131, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=7.243, at 0 src: 1, dest: 0, contents:   1   0   9   7
+Delay from 0 to 1 is 1 and from 1 to 2 is 9 totaling 10 and the previous delay of 11
+Delay from 0 to 1 is 1 and from 1 to 3 is 7 totaling 8 and the previous delay of 13
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    11 
+dest 2|   10     1 
+     3|    8    18 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=7.845, at 1 src: 0, dest: 1, contents:   0   1   1   3
+Delay from 1 to 0 is 1 and from 0 to 3 is 3 totaling 4 and the previous delay of 9
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    15
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 3 is 7
+Table has delay from 1 to 3 as 4 via 0
+
+MAIN: rcv event, t=7.855, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=8.457, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    11 
+dest 2|   10     1 
+     3|    8    18 
+
+
+MAIN: rcv event, t=8.688, at 0 src: 2, dest: 0, contents:   1   9   0   2
+Delay from 0 to 2 is 1 and from 2 to 1 is 9 totaling 10 and the previous delay of 11
+Delay from 0 to 2 is 1 and from 2 to 3 is 2 totaling 3 and the previous delay of 18
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=8.826, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=9.239, at 2 src: 3, dest: 2, contents:   8   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=9.453, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=9.759, at 1 src: 3, dest: 1, contents:   3   7   2   0
+Delay from 1 to 3 is 7 and from 3 to 0 is 3 totaling 10 and the previous delay of 15
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=9.781, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=10.308, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=10.319, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=10.323, at 2 src: 3, dest: 2, contents:   8   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=10.394, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=11.093, at 2 src: 0, dest: 2, contents:   0   1   1  13
+Delay from 2 to 0 is 1 and from 0 to 3 is 13 totaling 14 and the previous delay of 9
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|   14    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=11.115, at 2 src: 3, dest: 2, contents:   8   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|   14    17     2
+
+
+MAIN: rcv event, t=11.134, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|   14    17     2
+
+
+MAIN: rcv event, t=11.259, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=11.263, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=11.427, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=11.698, at 1 src: 3, dest: 1, contents:   3   7   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=11.963, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=12.080, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=12.275, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=12.746, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=12.925, at 2 src: 0, dest: 2, contents:   0   1   1  13
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|   14    17     2
+
+
+MAIN: rcv event, t=12.942, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=13.150, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=13.779, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=14.203, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=14.441, at 2 src: 0, dest: 2, contents:   0   1   1   8
+Delay from 2 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 14
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=14.522, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=14.624, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=14.700, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=15.528, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=16.078, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=16.234, at 1 src: 0, dest: 1, contents:   0   1   1  18
+Delay from 1 to 0 is 1 and from 0 to 3 is 18 totaling 19 and the previous delay of 4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|   19    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=16.638, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=17.120, at 3 src: 1, dest: 3, contents:   1   0   2   4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=17.193, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=17.236, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=17.838, at 3 src: 1, dest: 3, contents:   1   0   2   4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=17.842, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|   19    12     7
+
+
+MAIN: rcv event, t=17.980, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=18.378, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|   19    12     7
+
+
+MAIN: rcv event, t=18.539, at 1 src: 0, dest: 1, contents:   0   1   1  18
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|   19    12     7
+
+
+MAIN: rcv event, t=19.025, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20.448, at 1 src: 0, dest: 1, contents:   0   1   1   3
+Delay from 1 to 0 is 1 and from 0 to 3 is 3 totaling 4 and the previous delay of 19
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20.799, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20.844, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=21.267, at 3 src: 1, dest: 3, contents:   1   0   2   4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=21.402, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=21.733, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=21.991, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=22.749, at 3 src: 1, dest: 3, contents:   1   0   2   4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=10000.000, at -1
+Delay from 0 to 1 is being changed from 1 to 20
+
+
+Delay from 1 to 0 is being changed from 1 to 20
+
+MAIN: rcv event, t=10000.825, at 0 src: 1, dest: 0, contents:  20   0  10   7
+Delay from 0 to 1 is 20 and from 1 to 1 is 0 totaling 20 and the previous delay of 9999
+Delay from 0 to 1 is 20 and from 1 to 2 is 10 totaling 30 and the previous delay of 9999
+Delay from 0 to 1 is 20 and from 1 to 3 is 7 totaling 27 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20   9999 
+dest 2|   30   9999 
+     3|   27   9999 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 9999
+Table has delay from 0 to 3 as 27 via 1
+
+MAIN: rcv event, t=10001.256, at 2 src: 0, dest: 2, contents:   0  20   1 9999
+Delay from 2 to 0 is 1 and from 0 to 1 is 20 totaling 21 and the previous delay of 2
+Delay from 2 to 0 is 1 and from 0 to 3 is 9999 totaling 10000 and the previous delay of 9
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|   21    10     9
+     3|  10000    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10001.444, at 3 src: 1, dest: 3, contents:  20   0  10   7
+Delay from 3 to 1 is 7 and from 1 to 0 is 20 totaling 27 and the previous delay of 8
+Delay from 3 to 1 is 7 and from 1 to 2 is 10 totaling 17 and the previous delay of 9
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   27     3
+dest 1|    7     4
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10001.931, at 1 src: 0, dest: 1, contents:   0  20   1 9999
+Delay from 1 to 0 is 20 and from 0 to 0 is 0 totaling 20 and the previous delay of 9999
+Delay from 1 to 0 is 20 and from 0 to 2 is 1 totaling 21 and the previous delay of 9999
+Delay from 1 to 0 is 20 and from 0 to 3 is 9999 totaling 10019 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20   9999   9999
+dest 2|   21   9999   9999
+     3|  10019   9999   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10002.095, at 1 src: 0, dest: 1, contents:   0  20   1  27
+Delay from 1 to 0 is 20 and from 0 to 3 is 27 totaling 47 and the previous delay of 10019
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20   9999   9999
+dest 2|   21   9999   9999
+     3|   47   9999   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10002.529, at 0 src: 2, dest: 0, contents:   1   9   0   2
+Delay from 0 to 2 is 1 and from 2 to 1 is 9 totaling 10 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 2 is 0 totaling 1 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 3 is 2 totaling 3 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   27     3 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 1 is 20
+Table has delay from 0 to 1 as 10 via 2
+
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 27
+Table has delay from 0 to 3 as 3 via 2
+
+MAIN: rcv event, t=10002.605, at 0 src: 1, dest: 0, contents:  20   0  10   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10002.811, at 1 src: 2, dest: 1, contents:   1   2   0   2
+Delay from 1 to 2 is 10 and from 2 to 0 is 1 totaling 11 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 2 is 0 totaling 10 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 3 is 2 totaling 12 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11   9999
+dest 2|   21    10   9999
+     3|   47    12   9999
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 0 is 20
+Table has delay from 1 to 0 as 11 via 2
+
+MAIN: rcv event, t=10003.021, at 3 src: 2, dest: 3, contents:   1  10   0   2
+Delay from 3 to 2 is 2 and from 2 to 1 is 10 totaling 12 and the previous delay of 4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   27     3
+dest 1|    7    12
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10003.077, at 2 src: 1, dest: 2, contents:  20   0  10   7
+Delay from 2 to 1 is 10 and from 1 to 0 is 20 totaling 30 and the previous delay of 11
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    10
+dest 1|   21    10     9
+     3|  10000    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10003.453, at 0 src: 1, dest: 0, contents:  20   0  10   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10003.621, at 2 src: 0, dest: 2, contents:   0  20   1  27
+Delay from 2 to 0 is 1 and from 0 to 3 is 27 totaling 28 and the previous delay of 10000
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    10
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10003.987, at 0 src: 1, dest: 0, contents:  11   0  10  12
+Delay from 0 to 1 is 20 and from 1 to 3 is 12 totaling 32 and the previous delay of 27
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   32     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10004.071, at 2 src: 3, dest: 2, contents:  27   7   2   0
+Delay from 2 to 3 is 2 and from 3 to 0 is 27 totaling 29 and the previous delay of 10
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10004.266, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   32     3 
+
+
+MAIN: rcv event, t=10004.318, at 3 src: 1, dest: 3, contents:  20   0  21   7
+Delay from 3 to 1 is 7 and from 1 to 2 is 21 totaling 28 and the previous delay of 17
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   27     3
+dest 1|    7    12
+     2|   28     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10004.484, at 1 src: 3, dest: 1, contents:   3   4   2   0
+Delay from 1 to 3 is 7 and from 3 to 0 is 3 totaling 10 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 2 is 2 totaling 9 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 3 is 0 totaling 7 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   47    12     7
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 0 is 11
+Table has delay from 1 to 0 as 10 via 3
+
+INCONSISTENCY FOUND
+Current delay from 1 to 2 is 10
+Table has delay from 1 to 2 as 9 via 3
+
+MAIN: rcv event, t=10004.558, at 3 src: 1, dest: 3, contents:  20   0  21   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   27     3
+dest 1|    7    12
+     2|   28     2
+
+
+MAIN: rcv event, t=10004.792, at 1 src: 0, dest: 1, contents:   0  10   1   3
+Delay from 1 to 0 is 20 and from 0 to 3 is 3 totaling 23 and the previous delay of 47
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10004.973, at 3 src: 1, dest: 3, contents:  11   0  10   7
+Delay from 3 to 1 is 7 and from 1 to 0 is 11 totaling 18 and the previous delay of 27
+Delay from 3 to 1 is 7 and from 1 to 2 is 10 totaling 17 and the previous delay of 28
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10005.090, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   32     3 
+
+
+MAIN: rcv event, t=10005.365, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10005.624, at 2 src: 1, dest: 2, contents:  20   0  10   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+MAIN: rcv event, t=10006.089, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10006.366, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10006.388, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10006.596, at 2 src: 1, dest: 2, contents:  20   0  10   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+MAIN: rcv event, t=10006.737, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10007.003, at 1 src: 0, dest: 1, contents:   0  10   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10007.052, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   30     1 
+     3|   32     3 
+
+
+MAIN: rcv event, t=10007.594, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10007.770, at 0 src: 1, dest: 0, contents:  10   0   9   7
+Delay from 0 to 1 is 20 and from 1 to 2 is 9 totaling 29 and the previous delay of 30
+Delay from 0 to 1 is 20 and from 1 to 3 is 7 totaling 27 and the previous delay of 32
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   29     1 
+     3|   27     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10007.914, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10008.058, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10008.154, at 2 src: 0, dest: 2, contents:   0  20   1  27
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+MAIN: rcv event, t=10008.301, at 3 src: 1, dest: 3, contents:  11   0  10   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10009.030, at 0 src: 1, dest: 0, contents:  10   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   29     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10009.801, at 3 src: 1, dest: 3, contents:  11   0  10   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10009.965, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10010.017, at 2 src: 1, dest: 2, contents:  20   0  10   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+MAIN: rcv event, t=10010.141, at 2 src: 3, dest: 2, contents:  27   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+MAIN: rcv event, t=10010.173, at 1 src: 0, dest: 1, contents:   0  10   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10011.941, at 2 src: 0, dest: 2, contents:   0  20   1  32
+Delay from 2 to 0 is 1 and from 0 to 3 is 32 totaling 33 and the previous delay of 28
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   33    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10012.893, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10012.995, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10013.276, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   29     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10013.878, at 2 src: 3, dest: 2, contents:  27   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   33    17     2
+
+
+MAIN: rcv event, t=10014.851, at 2 src: 1, dest: 2, contents:  20   0   9   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   33    17     2
+
+
+MAIN: rcv event, t=10016.351, at 2 src: 1, dest: 2, contents:  20   0   9   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    29
+dest 1|   21    10     9
+     3|   33    17     2
+
+
+MAIN: rcv event, t=10017.920, at 2 src: 3, dest: 2, contents:  18   7   2   0
+Delay from 2 to 3 is 2 and from 3 to 0 is 18 totaling 20 and the previous delay of 29
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    20
+dest 1|   21    10     9
+     3|   33    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10018.162, at 2 src: 0, dest: 2, contents:   0  20   1  27
+Delay from 2 to 0 is 1 and from 0 to 3 is 27 totaling 28 and the previous delay of 33
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    20
+dest 1|   21    10     9
+     3|   28    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=10018.202, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10019.390, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   29     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10019.408, at 3 src: 2, dest: 3, contents:   1  10   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|   18     3
+dest 1|    7    12
+     2|   17     2
+
+
+MAIN: rcv event, t=10019.656, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=10020.043, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|   20    10 
+dest 2|   29     1 
+     3|   27     3 
+
+
+MAIN: rcv event, t=10020.800, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+
+
+MAIN: rcv event, t=20000.000, at -1
+Delay from 0 to 1 is being changed from 20 to 1
+
+
+Delay from 1 to 0 is being changed from 20 to 1
+
+MAIN: rcv event, t=20000.102, at 2 src: 0, dest: 2, contents:   0   1   1 9999
+Delay from 2 to 0 is 1 and from 0 to 1 is 1 totaling 2 and the previous delay of 21
+Delay from 2 to 0 is 1 and from 0 to 3 is 9999 totaling 10000 and the previous delay of 28
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    30    20
+dest 1|    2    10     9
+     3|  10000    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20000.614, at 0 src: 1, dest: 0, contents:   1   0  10   7
+Delay from 0 to 1 is 1 and from 1 to 1 is 0 totaling 1 and the previous delay of 9999
+Delay from 0 to 1 is 1 and from 1 to 2 is 10 totaling 11 and the previous delay of 9999
+Delay from 0 to 1 is 1 and from 1 to 3 is 7 totaling 8 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1   9999 
+dest 2|   11   9999 
+     3|    8   9999 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 9999
+Table has delay from 0 to 3 as 8 via 1
+
+MAIN: rcv event, t=20000.798, at 3 src: 1, dest: 3, contents:   1   0  10   7
+Delay from 3 to 1 is 7 and from 1 to 0 is 1 totaling 8 and the previous delay of 18
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20001.099, at 1 src: 0, dest: 1, contents:   0   1   1 9999
+Delay from 1 to 0 is 1 and from 0 to 0 is 0 totaling 1 and the previous delay of 9999
+Delay from 1 to 0 is 1 and from 0 to 2 is 1 totaling 2 and the previous delay of 9999
+Delay from 1 to 0 is 1 and from 0 to 3 is 9999 totaling 10000 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|    2   9999   9999
+     3|  10000   9999   9999
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 2 is 10
+Table has delay from 1 to 2 as 2 via 0
+
+MAIN: rcv event, t=20001.163, at 0 src: 2, dest: 0, contents:   1   9   0   2
+Delay from 0 to 2 is 1 and from 2 to 1 is 9 totaling 10 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 2 is 0 totaling 1 and the previous delay of 9999
+Delay from 0 to 2 is 1 and from 2 to 3 is 2 totaling 3 and the previous delay of 9999
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   11     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 0 to 3 is 8
+Table has delay from 0 to 3 as 3 via 2
+
+MAIN: rcv event, t=20001.679, at 2 src: 1, dest: 2, contents:   1   0  10   7
+Delay from 2 to 1 is 10 and from 1 to 0 is 1 totaling 11 and the previous delay of 30
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    20
+dest 1|    2    10     9
+     3|  10000    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20001.896, at 1 src: 2, dest: 1, contents:   1   2   0   2
+Delay from 1 to 2 is 10 and from 2 to 0 is 1 totaling 11 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 2 is 0 totaling 10 and the previous delay of 9999
+Delay from 1 to 2 is 10 and from 2 to 3 is 2 totaling 12 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|  10000    12   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20002.288, at 3 src: 2, dest: 3, contents:   1   2   0   2
+Delay from 3 to 2 is 2 and from 2 to 1 is 2 totaling 4 and the previous delay of 12
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|   17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20002.626, at 1 src: 0, dest: 1, contents:   0   1   1   8
+Delay from 1 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 10000
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|    9    12   9999
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20002.721, at 0 src: 1, dest: 0, contents:   1   0   2   7
+Delay from 0 to 1 is 1 and from 1 to 2 is 2 totaling 3 and the previous delay of 11
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|    3     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20002.932, at 2 src: 0, dest: 2, contents:   0   1   1   8
+Delay from 2 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 10000
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    20
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20003.721, at 2 src: 3, dest: 2, contents:   8   7   2   0
+Delay from 2 to 3 is 2 and from 3 to 0 is 8 totaling 10 and the previous delay of 20
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20003.816, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|    3     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=20004.027, at 3 src: 1, dest: 3, contents:   1   0   2   7
+Delay from 3 to 1 is 7 and from 1 to 2 is 2 totaling 9 and the previous delay of 17
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20004.150, at 1 src: 3, dest: 1, contents:   3   4   2   0
+Delay from 1 to 3 is 7 and from 3 to 0 is 3 totaling 10 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 2 is 2 totaling 9 and the previous delay of 9999
+Delay from 1 to 3 is 7 and from 3 to 3 is 0 totaling 7 and the previous delay of 9999
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    9    12     7
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20004.161, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20004.298, at 1 src: 0, dest: 1, contents:   0   1   1   3
+Delay from 1 to 0 is 1 and from 0 to 3 is 3 totaling 4 and the previous delay of 9
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+Costs table was changed need to send out new DV
+INCONSISTENCY FOUND
+Current delay from 1 to 3 is 7
+Table has delay from 1 to 3 as 4 via 0
+
+MAIN: rcv event, t=20004.487, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20004.524, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20004.918, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20005.373, at 0 src: 1, dest: 0, contents:   1   0  10  12
+Delay from 0 to 1 is 1 and from 1 to 2 is 10 totaling 11 and the previous delay of 3
+Delay from 0 to 1 is 1 and from 1 to 3 is 12 totaling 13 and the previous delay of 8
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   11     1 
+     3|   13     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20005.549, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20006.048, at 2 src: 3, dest: 2, contents:   8   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20006.475, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20006.620, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20007.074, at 0 src: 1, dest: 0, contents:   1   0  10  12
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   11     1 
+     3|   13     3 
+
+
+MAIN: rcv event, t=20007.210, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   11     1 
+     3|   13     3 
+
+
+MAIN: rcv event, t=20007.512, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20008.362, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20008.408, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20008.473, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   11     1 
+     3|   13     3 
+
+
+MAIN: rcv event, t=20008.532, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20008.594, at 2 src: 0, dest: 2, contents:   0   1   1   8
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20008.811, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20009.957, at 0 src: 1, dest: 0, contents:   1   0   9   7
+Delay from 0 to 1 is 1 and from 1 to 2 is 9 totaling 10 and the previous delay of 11
+Delay from 0 to 1 is 1 and from 1 to 3 is 7 totaling 8 and the previous delay of 13
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20010.002, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20010.046, at 3 src: 1, dest: 3, contents:   1   0   2   7
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20010.151, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20010.197, at 3 src: 1, dest: 3, contents:   1   0   2   4
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20010.453, at 1 src: 3, dest: 1, contents:   3   4   2   0
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20010.547, at 0 src: 1, dest: 0, contents:   1   0   9   7
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=20010.562, at 2 src: 3, dest: 2, contents:   8   7   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20011.362, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20012.296, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20012.576, at 2 src: 1, dest: 2, contents:   1   0   2   7
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+MAIN: rcv event, t=20012.682, at 2 src: 0, dest: 2, contents:   0   1   1  13
+Delay from 2 to 0 is 1 and from 0 to 3 is 13 totaling 14 and the previous delay of 9
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|   14    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20013.214, at 2 src: 0, dest: 2, contents:   0   1   1   8
+Delay from 2 to 0 is 1 and from 0 to 3 is 8 totaling 9 and the previous delay of 14
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|    9    17     2
+
+
+Costs table was changed need to send out new DV
+MAIN: rcv event, t=20013.495, at 1 src: 0, dest: 1, contents:   0   1   1   3
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20013.661, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20013.702, at 3 src: 2, dest: 3, contents:   1   2   0   2
+                via     
+   D3 |    1     2 
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+
+
+MAIN: rcv event, t=20013.989, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=20014.844, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+MAIN: rcv event, t=20015.229, at 0 src: 2, dest: 0, contents:   1   9   0   2
+                via     
+   D0 |    1     2 
+  ----|-----------------
+     1|    1    10 
+dest 2|   10     1 
+     3|    8     3 
+
+
+MAIN: rcv event, t=20015.975, at 1 src: 2, dest: 1, contents:   1   2   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+
+
+
+Simulator terminated at t=20015.974609, no packets in medium
+Simulator terminated at time 20015.97460860011
